@@ -1,0 +1,54 @@
+
+CHANGE LOG:
+[code]
+v1.2: Added exception error nets and optimized some timings
+http://pastebin.com/4nzEdBEg
+
+v1.3: Optimized targeting and tidied up code.
+http://pastebin.com/NR4RiupM
+
+v1.4: Fixed getting stuck at door. Other small minor tweaks.
+http://pastebin.com/ptVNX11u
+
+v1.5: Added prayer! Just set the prayer up in quicktabs(I recommend Deflect melee + Berserker). Also added randoms!
+http://pastebin.com/XtHEeNCi
+
+v1.6: Stable version! Optimized to be used alongside prayer and tweaked the inventory setup
+http://pastebin.com/J1JxiDp1
+
+v1.7: Fixed some timings. Tweaked the praying method and inventory. Tweaked getting loot and added in modest antiban (random rest times).
+http://pastebin.com/x0KvLWi9
+
+v1.8: Fixed a lot of small stuff. Added anti-ban and anti-randoms.
+This is probably going to be my last "free" release. I'll get started on making a flawless script that'll cost a bit of rsgp. This is to 1) so i make some money for my work :O and 2) to stop tons and tons of free loaders.
+I'll still probably fix things that affect functionality, but I won't be adding failsafes and whatnot.
+http://pastebin.com/310nRcpY
+
+v2.0: Public release of the flawless bot!
+     -failsafes for multiple things such as banking, switching weapons, prayer etc.
+     -moves around if the zombies weren't attacking (ie got stuck on another player)
+     -flawless methods and fixed glitches in the 1.8 release
+     -more efficient (changed some timings)
+     -drops monkfish to pick items like effigies
+
+
+[/code]If you want to mod your loot table because you have Soul split (and thus can stay there indefinitely)
+replace the code within the loot() function with
+[code]
+itempickup(20667,"Vecna skull");
+itempickup(1631,"Uncut dragonstone");
+itempickup(384,"Raw shark");
+itempickup(12158, "Gold charm");
+itempickup(12163,"Blue charm");
+itempickup(12160,"Crimson charm");
+itempickup(12159,"Green charm");
+itempickup(8781,"Teak plank");
+itempickup(8779,"Oak plank");
+itempickup(961,"Plank");
+itempickup(7937,"Pure essence");
+itempickup(565,"Blood rune");
+itempickup(560,"Death rune");
+itempickup(561,"Nature rune");
+itempickup(562,"Chaos rune");
+itempickup(564,"Cosmic rune");
+[/code]Whatever you don't want to pick up (mind that you only have 8 slots for unstackables) put a // infront it. There is no need to put // around the unstackable items because they food will automatically be dropped to accomodate those rare drops.
